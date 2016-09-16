@@ -1,0 +1,166 @@
+@import './terra/table/variables';
+
+// Table Component
+// ========================================================
+
+.terra-Table {
+  background-color: $terra-table-background-color;
+  border-collapse: collapse;
+  border-spacing: 0;
+  max-width: 100%;
+  width: 100%;
+
+  caption {
+    padding-bottom: 0.5em;
+  }
+
+  tr {
+    display: block;
+  }
+
+  th,
+  td {
+    border: $terra-table-cell-border-width solid $terra-table-cell-border-color;
+    border-bottom: 0;
+    display: block;
+    padding: $terra-table-cell-padding;
+    text-align: left;
+
+    &::before {
+      content: attr(data-heading);
+      display: block;
+      font-weight: bold;
+    }
+
+    // Clears floated :before
+    &::after {
+      clear: both;
+      content: ' ';
+      display: table;
+    }
+
+    &:last-child {
+      border-bottom: $terra-table-cell-border-width solid $terra-table-cell-border-color;
+      margin-bottom: 1em;
+    }
+  }
+
+  thead {
+    display: none;
+  }
+
+  // Full behavior
+  @media screen and (min-width: $terra-small-breakpoint) {
+    border: $terra-table-cell-border-width solid $terra-table-cell-border-color;
+
+    tr {
+      border-bottom: $terra-table-tr-border-width solid $terra-table-tr-border-color;
+      display: table-row;
+      margin-bottom: 0;
+    }
+
+    th,
+    td {
+      border: 0; // Remove border from compact "card" view
+      display: table-cell;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th::before,
+    td::before,
+    th::after,
+    td::after {
+      display: none;
+    }
+
+    th:last-child,
+    td:last-child {
+      border: 0; // Remove border from compact "card" view
+    }
+
+    thead {
+      background-color: $terra-table-thead-background-color;
+      border-bottom: $terra-table-thead-border-width solid $terra-table-thead-border-color;
+      display: table-header-group;
+    }
+
+    thead th {
+      vertical-align: bottom;
+    }
+
+    tfoot tr {
+      border-top: $terra-table-tfoot-border-width solid $terra-table-tfoot-border-color;
+      text-align: left;
+    }
+  }
+}
+
+.terra-Table--small {
+  th,
+  td {
+    padding: $terra-table-cell-small-padding;
+  }
+}
+
+.terra-Table--groupedRows {
+  tbody th:last-child {
+    background-color: $terra-table-thead-background-color;
+    border-bottom: 0; // Remove border from compact "card" view
+    margin-bottom: 0; // Remove border from compact "card" view
+  }
+
+  // Full behavior
+  @media screen and (min-width: $terra-small-breakpoint) {
+    tr {
+      border: 0;
+    }
+
+    tbody {
+      border-bottom: $terra-table-tr-border-width solid $terra-table-tr-border-color;
+    }
+
+    tbody th:last-child {
+      background-color: transparent;
+    }
+  }
+}
+
+.terra-Table--striped {
+  tbody td:nth-child(even) {
+    background-color: $terra-table-row-striped-background-color;
+
+    @media screen and (min-width: $terra-small-breakpoint) {
+      background-color: transparent;
+    }
+  }
+
+  @media screen and (min-width: $terra-small-breakpoint) {
+    tbody tr:nth-child(even) {
+      background-color: $terra-table-row-striped-background-color;
+    }
+  }
+}
+
+.terra-Table--striped.terra-Table--groupedRows {
+  @media screen and (min-width: $terra-small-breakpoint) {
+    tbody:nth-of-type(even) {
+      background-color: $terra-table-row-striped-background-color;
+    }
+
+    tbody tr:nth-of-type(even) {
+      background-color: transparent;
+    }
+  }
+}
+
+// Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css
+@media print {
+  .terra-Table thead {
+    display: table-header-group;
+  }
+
+  .terra-Table tr {
+    page-break-inside: avoid;
+  }
+}
