@@ -45,7 +45,8 @@
     }
   }
 
-  thead {
+  thead,
+  th {
     display: none;
   }
 
@@ -103,29 +104,6 @@
   }
 }
 
-.terra-Table--groupedRows {
-  tbody th:last-child {
-    background-color: $terra-table-thead-background-color;
-    border-bottom: 0; // Remove border from compact "card" view
-    margin-bottom: 0; // Remove border from compact "card" view
-  }
-
-  // Full behavior
-  @media screen and (min-width: $terra-small-breakpoint) {
-    tr {
-      border: 0;
-    }
-
-    tbody {
-      border-bottom: $terra-table-tr-border-width solid $terra-table-tr-border-color;
-    }
-
-    tbody th:last-child {
-      background-color: transparent;
-    }
-  }
-}
-
 .terra-Table--striped {
   tbody td:nth-child(even) {
     background-color: $terra-table-row-striped-background-color;
@@ -138,18 +116,6 @@
   @media screen and (min-width: $terra-small-breakpoint) {
     tbody tr:nth-child(even) {
       background-color: $terra-table-row-striped-background-color;
-    }
-  }
-}
-
-.terra-Table--striped.terra-Table--groupedRows {
-  @media screen and (min-width: $terra-small-breakpoint) {
-    tbody:nth-of-type(even) {
-      background-color: $terra-table-row-striped-background-color;
-    }
-
-    tbody tr:nth-of-type(even) {
-      background-color: transparent;
     }
   }
 }

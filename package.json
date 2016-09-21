@@ -1,7 +1,7 @@
 {
   "name": "terra-table",
   "version": "0.1.0",
-  "description": "terra-table",
+  "description": "The terra table component provides a responsive way to present tabular data",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cerner/terra-table.git"
@@ -36,7 +36,7 @@
     "style-loader": "^0.13.0",
     "stylelint": "^7.1.0",
     "stylelint-config-sass-guidelines": "^1.1.0",
-    "terra-application": "git://github.cerner.com/terra/terra-application.git#master",
+    "terra-application": "^0.2.0",
     "terra-legacy-theme": ">= 0.1.0-rc.1  < 1.0.0",
     "webpack": "^1.13.0",
     "webpack-dev-server": "^1.15.1"
