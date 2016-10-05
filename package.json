@@ -1,6 +1,6 @@
 {
   "name": "terra-table",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "The terra table component provides a responsive way to present tabular data",
   "repository": {
     "type": "git",
