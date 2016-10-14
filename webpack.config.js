@@ -3,13 +3,6 @@ const autoprefixer = require('autoprefixer');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const modulePaths = Object.keys(require('./package.json').devDependencies)
-  .reduce((paths, module) => {
-    // eslint-disable-next-line global-require
-    const includePaths = require(module).includePaths;
-
-    return paths.concat(includePaths);
-  }, []);
 
 module.exports = {
   entry: {
@@ -44,7 +37,4 @@ module.exports = {
       ],
     }),
   ],
-  sassLoader: {
-    includePaths: modulePaths,
-  },
 };

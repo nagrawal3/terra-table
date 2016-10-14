@@ -1,4 +1,4 @@
-# Terra Table _(Currently in beta)_
+# Terra Table
 
 [![NPM version](http://img.shields.io/npm/v/terra-table.svg)](https://www.npmjs.org/package/terra-table)
 [![Build Status](https://travis-ci.org/cerner/terra-table.svg?branch=master)](https://travis-ci.org/cerner/terra-table)

@@ -1,3 +1,4 @@
+@import 'node_modules/terra-mixins/src/terra-mixins';
 @import './terra/table/variables';
 
 // Table Component
@@ -20,11 +21,14 @@
 
   th,
   td {
+    @include terra-padding-horizontal($terra-table-cell-padding-start, $terra-table-cell-padding-end);
+    @include terra-text-align-start;
+
     border: $terra-table-cell-border-width solid $terra-table-cell-border-color;
     border-bottom: 0;
     display: block;
-    padding: $terra-table-cell-padding;
-    text-align: left;
+    padding-bottom: $terra-table-cell-padding-bottom;
+    padding-top: $terra-table-cell-padding-top;
 
     &::before {
       content: attr(data-heading);
@@ -34,7 +38,8 @@
 
     // Clears floated :before
     &::after {
-      clear: both;
+      @include terra-clear-both;
+
       content: ' ';
       display: table;
     }
@@ -62,9 +67,10 @@
 
     th,
     td {
+      @include terra-text-align-start;
+
       border: 0; // Remove border from compact "card" view
       display: table-cell;
-      text-align: left;
       vertical-align: top;
     }
 
@@ -91,8 +97,9 @@
     }
 
     tfoot tr {
+      @include terra-text-align-start;
+
       border-top: $terra-table-tfoot-border-width solid $terra-table-tfoot-border-color;
-      text-align: left;
     }
   }
 }
@@ -100,7 +107,10 @@
 .terra-Table--small {
   th,
   td {
-    padding: $terra-table-cell-small-padding;
+    @include terra-padding-horizontal($terra-table-cell-padding-start, $terra-table-cell-padding-end);
+
+    padding-bottom: $terra-table-cell-small-padding-bottom;
+    padding-top: $terra-table-cell-small-padding-top;
   }
 }
 

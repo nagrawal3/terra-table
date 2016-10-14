@@ -1,4 +1,4 @@
-# Terra Table _(Currently in beta)_
+# Terra Table
 
 The terra table component provides a responsive way to present tabular data.
 
