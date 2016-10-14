@@ -21,7 +21,7 @@
 
   th,
   td {
-    @include terra-padding-horizontal($terra-table-cell-padding-start, $terra-table-cell-padding-end);
+    @include terra-padding-horizontal($terra-table-cell-padding-left, $terra-table-cell-padding-right);
     @include terra-text-align-start;
 
     border: $terra-table-cell-border-width solid $terra-table-cell-border-color;
@@ -107,7 +107,7 @@
 .terra-Table--small {
   th,
   td {
-    @include terra-padding-horizontal($terra-table-cell-padding-start, $terra-table-cell-padding-end);
+    @include terra-padding-horizontal($terra-table-cell-padding-left, $terra-table-cell-padding-right);
 
     padding-bottom: $terra-table-cell-small-padding-bottom;
     padding-top: $terra-table-cell-small-padding-top;
