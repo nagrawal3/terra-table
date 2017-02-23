@@ -3,23 +3,28 @@ import classNames from 'classnames';
 import TableRow from '../src/TableRow';
 import TableRowContent from '../src/TableRowContent';
 
-function renderChildren(children, height, onClick) {
-	return React.Children.map(children, child => {
-		if(child.type === TableRow) {
-			if(child.props.onClick) {
-				return React.cloneElement(child, {
-					height: height
-				})
-			}
-			else {
-				return React.cloneElement(child, {
-					height: height,
-					onClick: onClick
-				})
-			}
+const propTypes = {
+  children: PropTypes.arrayOf(PropTypes.element),
+  height: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'huge']),
+  onClick: PropTypes.func
+};
+
+const defaultProps = {
+  onClick: undefined
+};
+
+function cloneChildItems(children, height, onClick) {
+	return children.map((child) => {
+		let newProps = {height: height};
+		if(onClick) {
+			newProps.onClick = onClick;
 		}
-		else
-			return child
+		if(child.type === TableRow) {
+			return React.cloneElement(child, newProps)
+		}
+		else {
+			return child;
+		}
 	});
 };
 
@@ -29,10 +34,15 @@ const TableRows = ({
 	onClick,
 	...customProps
 }) => {
+	let cloneChildren = cloneChildItems(children, height, onClick);
 	return (
 		<tbody {...customProps}>
-			{renderChildren(children, height, onClick)}
+			{cloneChildren}
 		</tbody>
 	);
 };
+
+TableRows.propTypes = propTypes;
+TableRows.defaultProps = defaultProps;
+
 export default TableRows;

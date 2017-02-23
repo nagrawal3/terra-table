@@ -2,7 +2,8 @@ import React, {PropTypes} from 'react';
 import classNames from 'classnames';
 
 const propTypes = {
-	display: PropTypes.any.isRequired
+	display: PropTypes.any.isRequired,
+	height: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'huge'])
 };
 
 const TableRowContent = ({

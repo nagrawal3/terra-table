@@ -2,8 +2,11 @@ import React, {PropTypes} from 'react';
 import classNames from 'classnames';
 
 const propTypes = {
-	display: PropTypes.any.isRequired,
-	minWidth: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'huge'])
+	display: PropTypes.node.isRequired,
+	minWidth: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'huge']),
+	sort: PropTypes.oneOf(['asc', 'desc']),
+	height: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'huge']),
+	onClick: PropTypes.func
 };
 
 const defaultProps = {
@@ -26,6 +29,7 @@ const TableHeaderContent = ({
 	let contentClassName = classNames([
 			{['terra-Table-width-'+minWidth]: minWidth}
 		]);
+
 	let ascSortInd = classNames([
 			{['terra-Table-sort-indicator']: sort==='asc'},
 			{'terra-Table-hidden': sort!=='asc'},

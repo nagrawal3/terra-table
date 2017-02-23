@@ -1,6 +1,6 @@
 # Terra Table
 
- {insert description}
+ The terra table component provides a responsive way to present tabular data.
 
 ## Getting Started
 

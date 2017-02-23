@@ -5,29 +5,32 @@ import TableHeaderContent from '../src/TableHeaderContent';
 const propTypes = {
   	onClick: PropTypes.func,
 	height: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'huge']),
-	children: PropTypes.node.isRequired
+	children: PropTypes.arrayOf(PropTypes.element).isRequired
 };
 
 const defaultProps = {
   	onClick: undefined
 };
 
-function renderChildren(children, height, onClick, ...customProps) {
+function cloneChildItems(children, height, onClick) {
+	let newProps = {
+		height: height,
+		onClick: onClick
+	};
+	
 	let childrenArray = React.Children.toArray(children);
 	if(childrenArray.length > 16)
 		console.log('Number of Columns are '+React.Children.count(children) +'. This is more than columns limit');
+	// Filtering children to render only 16 columns
 	return childrenArray.filter((child, index) => {
 		return (index < 16);
 	}).map(child => {
 		if(child.type === TableHeaderContent) {
-			return React.cloneElement(child, {
-				height: height,
-				onClick: onClick,
-				...customProps
-			});
+			return React.cloneElement(child, newProps);
 		}
-		else
+		else {
 			return child;
+		}
 	});
 };
 
@@ -37,10 +40,11 @@ const TableHeader = ({
 	onClick,
 	...customProps
 	}) => {
+	const cloneChildren = cloneChildItems(children, height, onClick);
 	return (
-		<thead>
+		<thead {...customProps}>
 			<tr>
-		    	{renderChildren(children, height, onClick, ...customProps)}
+		    	{cloneChildren}
 		    </tr>
 		</thead>
 	);

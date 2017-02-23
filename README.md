@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/cerner/terra-table.svg?branch=master)](https://travis-ci.org/cerner/terra-table)
 [![Stories in Ready](https://badge.waffle.io/cerner/terra-ui.com.svg?label=ready&title=Ready)](http://waffle.io/cerner/terra-ui.com)
 
-{insert description}
+The terra table component provides a responsive way to present tabular data.
 
 - [Getting Started](#getting-started)
 - [Documentation](#documentation)

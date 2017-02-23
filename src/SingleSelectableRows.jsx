@@ -2,6 +2,18 @@ import React, {PropTypes} from 'react';
 import classNames from 'classnames';
 import TableRows from '../src/TableRows';
 
+const propTypes = {
+  children: PropTypes.arrayOf(PropTypes.element),
+  height: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'huge']),
+  onClick: PropTypes.func,
+  isSelectable: PropTypes.bool
+};
+
+const defaultProps = {
+  onClick: undefined,
+  isSelectable: true
+};
+
 class SingleSelectableRows extends React.Component {
 	static selectedRowIndex(rows, isSelectable) {
 		// Only show selection if rows are selectable
@@ -40,7 +52,7 @@ class SingleSelectableRows extends React.Component {
 	newPropsForRow(row, index, onClick) {
 		const isSelected = this.state.selectedIndex === index;
 
-		let newProps = {onClick};
+		let newProps = {onClick: onClick};
 
 		// set the isSelected to false for all the rows except the row whose index is set to state selectedIndex
 		if (isSelected !== row.isSelected) {
@@ -81,5 +93,9 @@ class SingleSelectableRows extends React.Component {
 		);
 	}
 
-}
+};
+
+SingleSelectableRows.propTypes = propTypes;
+SingleSelectableRows.defaultProps = defaultProps;
+
 export default SingleSelectableRows;

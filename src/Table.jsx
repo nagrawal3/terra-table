@@ -9,7 +9,7 @@ import TableSingleSelectableRows from '../src/SingleSelectableRows';
 import '../src/table.scss';
 
 const propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.arrayOf(PropTypes.element).isRequired,
   isStripped: PropTypes.bool
 };
 
@@ -22,7 +22,7 @@ const Table = ({
   isStripped,
   ...customProps
   }) => {
-  const tableClassNames = classNames([
+  let tableClassNames = classNames([
       'terra-Table',
       {'terra-Table--striped': isStripped},
       customProps.className
