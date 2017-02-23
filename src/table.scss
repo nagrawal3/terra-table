@@ -1,0 +1,72 @@
+@import 'node_modules/terra-mixins/src/terra-mixins';
+@import './variables';
+@import './mixins';
+@import '../src/terra-table';
+
+@function get-size($size, $base) {
+  @return $size*$base+px;
+}
+
+.terra-Table-width-tiny {
+  min-width: get-size(1, 30);
+}
+
+.terra-Table-width-small {
+  min-width: get-size(2, 30);
+}
+
+.terra-Table-width-medium {
+  min-width: get-size(3, 30);
+}
+
+.terra-Table-width-large {
+  min-width: get-size(4, 30);
+}
+
+.terra-Table-width-huge {
+  min-width: get-size(5, 30);
+}
+
+.terra-Table-content {
+  min-height: 20px;
+  overflow: scroll;
+}
+
+.terra-Table-height-tiny,
+.terra-Table-headerHeight-tiny {
+  max-height: get-size(2, 10);
+}
+
+.terra-Table-height-small,
+.terra-Table-headerHeight-small {
+  max-height: get-size(3, 10);
+}
+
+.terra-Table-height-medium,
+.terra-Table-headerHeight-medium {
+  max-height: get-size(4, 10);
+}
+
+.terra-Table-height-large,
+.terra-Table-headerHeight-large {
+  max-height: get-size(5, 10);
+}
+
+.terra-Table-height-huge,
+.terra-Table-headerHeight-huge {
+  max-height: get-size(6, 10);
+}
+
+.terra-Table--isSelected {
+  background-color: $terra-blue-80 !important;
+  color: $terra-white;
+}
+
+.terra-Table-hidden {
+  visibility: hidden;
+}
+
+.terra-Table-sort-indicator {
+  float: right;
+}
+
