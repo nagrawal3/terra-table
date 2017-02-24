@@ -14,32 +14,32 @@ const defaultProps = {
 };
 
 function cloneChildItems(children, height, onClick) {
-	return children.map((child) => {
-		let newProps = {height: height};
-		if(onClick) {
-			newProps.onClick = onClick;
-		}
-		if(child.type === TableRow) {
-			return React.cloneElement(child, newProps)
-		}
-		else {
-			return child;
-		}
-	});
+  return children.map((child) => {
+    let newProps = {height: height};
+    if(onClick) {
+      newProps.onClick = onClick;
+    }
+    if(child.type === TableRow) {
+      return React.cloneElement(child, newProps)
+    }
+    else {
+      return child;
+    }
+  });
 };
 
 const TableRows = ({
-	children,
-	height,
-	onClick,
-	...customProps
+  children,
+  height,
+  onClick,
+  ...customProps
 }) => {
-	let cloneChildren = cloneChildItems(children, height, onClick);
-	return (
-		<tbody {...customProps}>
-			{cloneChildren}
-		</tbody>
-	);
+  let cloneChildren = cloneChildItems(children, height, onClick);
+  return (
+    <tbody {...customProps}>
+      {cloneChildren}
+    </tbody>
+  );
 };
 
 TableRows.propTypes = propTypes;
