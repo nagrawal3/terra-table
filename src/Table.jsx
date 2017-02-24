@@ -10,7 +10,7 @@ import '../src/table.scss';
 
 const propTypes = {
   children: PropTypes.arrayOf(PropTypes.element).isRequired,
-  isStripped: PropTypes.bool
+  isStriped: PropTypes.bool
 };
 
 const defaultProps = {
@@ -19,12 +19,12 @@ const defaultProps = {
 
 const Table = ({
   children,
-  isStripped,
+  isStriped,
   ...customProps
   }) => {
   let tableClassNames = classNames([
       'terra-Table',
-      {'terra-Table--striped': isStripped},
+      {'terra-Table--striped': isStriped},
       customProps.className
     ]);
   return (

@@ -153,7 +153,7 @@ storiesOf('Table ', module)
     </Table>
   ))
   .add('An example of the selectable base table without zebra stipping', () => (
-    <Table isStripped = {false}>
+    <Table isStriped = {false}>
       <Table.Header>
         <Table.HeaderContent height = {'medium'} key = {1} display = {'Column 1'} minWidth = {'huge'} />
         <Table.HeaderContent display = {'Column Heading 2'} key = {2} minWidth = {'medium'} />
