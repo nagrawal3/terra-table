@@ -14,7 +14,7 @@ const propTypes = {
 };
 
 const defaultProps = {
-  isStripped: true
+  isStriped: true
 };
 
 const Table = ({
