@@ -3,13 +3,13 @@ import classNames from 'classnames';
 import TableHeaderContent from '../src/TableHeaderContent';
 
 const propTypes = {
-  	onClick: PropTypes.func,
+  onClick: PropTypes.func,
 	height: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'huge']),
 	children: PropTypes.arrayOf(PropTypes.element).isRequired
 };
 
 const defaultProps = {
-  	onClick: undefined
+  onClick: undefined
 };
 
 function cloneChildItems(children, height, onClick) {

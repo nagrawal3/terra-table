@@ -44,7 +44,7 @@ const TableRow = ({
 	return (
 		<tr className = {rowClassNames} onClick = {onClick} {...customProps}>
 			{cloneChildren}
-        </tr>
+    </tr>
 	);
 };
 

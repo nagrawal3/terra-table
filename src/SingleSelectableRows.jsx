@@ -24,15 +24,15 @@ class SingleSelectableRows extends React.Component {
 		      }
 		    }
 		}
-	    return -1;
+	  return -1;
 	}
 
 	handleSelection(event, index) {
-	    this.setState({ selectedIndex: index });
+	  this.setState({ selectedIndex: index });
 	}
 
 	shouldHandleSelection(index) {
-	    return index !== this.state.selectedIndex;
+	  return index !== this.state.selectedIndex;
 	}
 
 	wrappedOnClickForRow(row, index) {
@@ -59,7 +59,7 @@ class SingleSelectableRows extends React.Component {
 	      newProps.isSelected = isSelected;
 	    }
 
-	    return newProps;
+	  return newProps;
 	}
 
 	clonedChildItems(rows) {
@@ -71,11 +71,11 @@ class SingleSelectableRows extends React.Component {
 	}
 
 	componentWillReceiveProps(nextProps) {
-	    const index = SingleSelectableRows.selectedRowIndex(nextProps.children);
+    const index = SingleSelectableRows.selectedRowIndex(nextProps.children);
 
-	    if (index !== this.state.selectedIndex) {
-	      this.setState({ selectedIndexes: index });
-	    }
+    if (index !== this.state.selectedIndex) {
+      this.setState({ selectedIndexes: index });
+    }
 	}
 
 	constructor(props) {
