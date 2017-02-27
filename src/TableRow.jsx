@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import TableRowContent from '../src/TableRowContent';
 
 const propTypes = {
-  children: PropTypes.arrayOf(PropTypes.element),
+  children: PropTypes.arrayOf(PropTypes.node),
   isSelected: PropTypes.bool,
   height: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'huge']),
   onClick: PropTypes.func,

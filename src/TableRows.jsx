@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import TableRow from '../src/TableRow';
 
 const propTypes = {
-  children: PropTypes.arrayOf(PropTypes.element),
+  children: PropTypes.arrayOf(PropTypes.node),
   height: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'huge']),
   onClick: PropTypes.func,
 };

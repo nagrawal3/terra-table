@@ -9,7 +9,7 @@ import TableSingleSelectableRows from '../src/SingleSelectableRows';
 import '../src/table.scss';
 
 const propTypes = {
-  children: PropTypes.arrayOf(PropTypes.element).isRequired,
+  children: PropTypes.arrayOf(PropTypes.node).isRequired,
   isStriped: PropTypes.bool,
 };
 

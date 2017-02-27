@@ -4,7 +4,7 @@ import TableHeaderContent from '../src/TableHeaderContent';
 const propTypes = {
   onClick: PropTypes.func,
   height: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'huge']),
-  children: PropTypes.arrayOf(PropTypes.element).isRequired,
+  children: PropTypes.arrayOf(PropTypes.node).isRequired,
 };
 
 const defaultProps = {
