@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react';
+import React, { PropTypes } from 'react';
 import classNames from 'classnames';
 
 const propTypes = {
@@ -6,12 +6,12 @@ const propTypes = {
   minWidth: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'huge']),
   sort: PropTypes.oneOf(['asc', 'desc']),
   height: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'huge']),
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 };
 
 const defaultProps = {
-  minWidth: 'small'
-}
+  minWidth: 'small',
+};
 
 const TableHeaderContent = ({
   display,
@@ -21,31 +21,31 @@ const TableHeaderContent = ({
   onClick,
   ...customProps
   }) => {
-  let headerContentClassNames = classNames([
-      {['terra-Table-headerHeight-'+height]: height},
-      'terra-Table-content'
-    ]);
+  const headerContentClassNames = classNames([
+    { [`terra-Table-headerHeight-${height}`]: height },
+    'terra-Table-content',
+  ]);
 
-  let contentClassName = classNames([
-      {['terra-Table-width-'+minWidth]: minWidth}
-    ]);
+  const contentClassName = classNames([
+    { [`terra-Table-width-${minWidth}`]: minWidth },
+  ]);
 
-  let ascSortInd = classNames([
-      {['terra-Table-sort-indicator']: sort==='asc'},
-      {'terra-Table-hidden': sort!=='asc'},
-    ]);
+  const ascSortInd = classNames([
+    { 'terra-Table-sort-indicator': sort === 'asc' },
+    { 'terra-Table-hidden': sort !== 'asc' },
+  ]);
 
-  let descSortInd = classNames([
-      {['terra-Table-sort-indicator']: sort==='desc'},
-      {'terra-Table-hidden': sort!=='desc'},
-    ]);
+  const descSortInd = classNames([
+    { 'terra-Table-sort-indicator': sort === 'desc' },
+    { 'terra-Table-hidden': sort !== 'desc' },
+  ]);
 
   return (
-    <th scope="col" onClick = {onClick} className = {contentClassName} {...customProps}>
-      <div className = {headerContentClassNames}>
+    <th scope="col" onClick={onClick} className={contentClassName} {...customProps}>
+      <div className={headerContentClassNames}>
         {display}
-        <span className = {ascSortInd}>↑</span>
-        <span className = {descSortInd}>↓</span>
+        <span className={ascSortInd}>↑</span>
+        <span className={descSortInd}>↓</span>
       </div>
     </th>
   );

@@ -10,11 +10,11 @@ import '../src/table.scss';
 
 const propTypes = {
   children: PropTypes.arrayOf(PropTypes.element).isRequired,
-  isStriped: PropTypes.bool
+  isStriped: PropTypes.bool,
 };
 
 const defaultProps = {
-  isStriped: true
+  isStriped: true,
 };
 
 const Table = ({
@@ -22,11 +22,11 @@ const Table = ({
   isStriped,
   ...customProps
   }) => {
-  let tableClassNames = classNames([
-      'terra-Table',
-      {'terra-Table--striped': isStriped},
-      customProps.className
-    ]);
+  const tableClassNames = classNames([
+    'terra-Table',
+    { 'terra-Table--striped': isStriped },
+    customProps.className,
+  ]);
   return (
     <table {...customProps} className={tableClassNames}>
       {children}

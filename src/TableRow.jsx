@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react';
+import React, { PropTypes } from 'react';
 import classNames from 'classnames';
 import TableRowContent from '../src/TableRowContent';
 
@@ -6,28 +6,25 @@ const propTypes = {
   children: PropTypes.arrayOf(PropTypes.element),
   isSelected: PropTypes.bool,
   height: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'huge']),
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 };
 
 const defaultProps = {
-  isSelected: false
+  isSelected: false,
 };
 
 function cloneChildItems(children, height) {
-  let childrenArray = React.Children.toArray(children);
-  if(childrenArray.length > 16)
-    console.log('Number of Columns are '+React.Children.count(children) +'. This is more than columns limit');
-  return childrenArray.filter((child, index) => {
-    return (index < 16);
-  }).map(child => {
-    if(child.type === TableRowContent) {
-      return React.cloneElement(child, { height: height });
+  const childrenArray = React.Children.toArray(children);
+  if (childrenArray.length > 16) {
+    console.log(`Number of Columns are ${React.Children.count(children)}. This is more than columns limit`);
+  }
+  return childrenArray.filter((child, index) => index < 16).map((child) => {
+    if (child.type === TableRowContent) {
+      return React.cloneElement(child, { height });
     }
-    else {
-      return child;
-    }
+    return child;
   });
-};
+}
 
 const TableRow = ({
   children,
@@ -36,13 +33,13 @@ const TableRow = ({
   onClick,
   ...customProps
   }) => {
-  let rowClassNames = classNames([
-      {'terra-Table--isSelected': isSelected}
-    ]);
+  const rowClassNames = classNames([
+      { 'terra-Table--isSelected': isSelected },
+  ]);
 
-  let cloneChildren = cloneChildItems(children, height);
+  const cloneChildren = cloneChildItems(children, height);
   return (
-    <tr className = {rowClassNames} onClick = {onClick} {...customProps}>
+    <tr className={rowClassNames} onClick={onClick} {...customProps}>
       {cloneChildren}
     </tr>
   );

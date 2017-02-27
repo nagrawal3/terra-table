@@ -1,30 +1,43 @@
-import React, {PropTypes} from 'react';
-import classNames from 'classnames';
+import React, { PropTypes } from 'react';
 import TableRows from '../src/TableRows';
 
 const propTypes = {
   children: PropTypes.arrayOf(PropTypes.element),
   height: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'huge']),
   onClick: PropTypes.func,
-  isSelectable: PropTypes.bool
+  isSelectable: PropTypes.bool,
 };
 
 const defaultProps = {
   onClick: undefined,
-  isSelectable: true
+  isSelectable: true,
 };
 
 class SingleSelectableRows extends React.Component {
   static selectedRowIndex(rows, isSelectable) {
     // Only show selection if rows are selectable
-    if(isSelectable) {
-      for (let i = 0; i < rows.length ; i += 1) {
-          if (rows[i].props.isSelected === true) {
-            return i;
-          }
+    if (isSelectable) {
+      for (let i = 0; i < rows.length; i += 1) {
+        if (rows[i].props.isSelected === true) {
+          return i;
         }
+      }
     }
     return -1;
+  }
+
+  constructor(props) {
+    super(props);
+    this.handleSelection = this.handleSelection.bind(this);
+    this.state = { selectedIndex: SingleSelectableRows.selectedRowIndex(this.props.children, this.props.isSelectable) };
+  }
+
+  componentWillReceiveProps(nextProps) {
+    const index = SingleSelectableRows.selectedRowIndex(nextProps.children);
+
+    if (index !== this.state.selectedIndex) {
+      this.setState({ selectedIndexes: index });
+    }
   }
 
   handleSelection(event, index) {
@@ -39,25 +52,25 @@ class SingleSelectableRows extends React.Component {
     const initialOnClick = this.props.onClick;
 
     return (event) => {
-      if(this.props.isSelectable && this.shouldHandleSelection(index)) {
+      if (this.props.isSelectable && this.shouldHandleSelection(index)) {
         this.handleSelection(event, index);
       }
 
-      if(initialOnClick) {
+      if (initialOnClick) {
         initialOnClick(event);
       }
-    }
+    };
   }
 
   newPropsForRow(row, index, onClick) {
     const isSelected = this.state.selectedIndex === index;
 
-    let newProps = {onClick: onClick};
+    const newProps = { onClick };
 
     // set the isSelected to false for all the rows except the row whose index is set to state selectedIndex
     if (isSelected !== row.isSelected) {
-        newProps.isSelected = isSelected;
-      }
+      newProps.isSelected = isSelected;
+    }
 
     return newProps;
   }
@@ -65,35 +78,22 @@ class SingleSelectableRows extends React.Component {
   clonedChildItems(rows) {
     return rows.map((row, index) => {
       const wrappedOnClick = this.wrappedOnClickForRow(row, index);
-      const newProps = this.newPropsForRow(row, index, wrappedOnClick)
+      const newProps = this.newPropsForRow(row, index, wrappedOnClick);
       return React.cloneElement(row, newProps);
-    })
-  }
-
-  componentWillReceiveProps(nextProps) {
-    const index = SingleSelectableRows.selectedRowIndex(nextProps.children);
-
-    if (index !== this.state.selectedIndex) {
-      this.setState({ selectedIndexes: index });
-    }
-  }
-
-  constructor(props) {
-    super(props);
-    this.handleSelection = this.handleSelection.bind(this);
-    this.state = {selectedIndex: SingleSelectableRows.selectedRowIndex(this.props.children, this.props.isSelectable)}
+    });
   }
 
   render() {
-    const {children, height, onClick, isSelectable, ...customProps} = this.props;
+    const { children, height, onClick, isSelectable, ...customProps } = this.props;
     const clonedChilItems = this.clonedChildItems(children);
-    
-    return(
-      <TableRows height = {height} children = {clonedChilItems} {...customProps}/>
+    return (
+      <TableRows height={height} {...customProps}>
+        {clonedChilItems}
+      </TableRows>
     );
   }
 
-};
+}
 
 SingleSelectableRows.propTypes = propTypes;
 SingleSelectableRows.defaultProps = defaultProps;

@@ -1,9 +1,9 @@
-import React, {PropTypes} from 'react';
+import React, { PropTypes } from 'react';
 import classNames from 'classnames';
 
 const propTypes = {
   display: PropTypes.any.isRequired,
-  height: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'huge'])
+  height: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'huge']),
 };
 
 const TableRowContent = ({
@@ -11,9 +11,9 @@ const TableRowContent = ({
   height,
   ...customProps
   }) => {
-  let contentClassName = classNames([
-    {['terra-Table-height-'+height]: height},
-    'terra-Table-content'
+  const contentClassName = classNames([
+    { [`terra-Table-height-${height}`]: height },
+    'terra-Table-content',
   ]);
   return (
     <td {...customProps}>
