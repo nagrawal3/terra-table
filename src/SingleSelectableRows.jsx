@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import TableRows from '../src/TableRows';
 
 const propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node),
+  children: PropTypes.node,
   height: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'huge']),
   onClick: PropTypes.func,
   isSelectable: PropTypes.bool,
@@ -16,14 +16,7 @@ const defaultProps = {
 class SingleSelectableRows extends React.Component {
   static selectedRowIndex(rows, isSelectable) {
     // Only show selection if rows are selectable
-    if (isSelectable) {
-      for (let i = 0; i < rows.length; i += 1) {
-        if (rows[i].props.isSelected === true) {
-          return i;
-        }
-      }
-    }
-    return -1;
+    return !isSelectable ? -1 : rows.findIndex((row) => row.props.isSelected);
   }
 
   constructor(props) {
