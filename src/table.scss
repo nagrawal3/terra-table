@@ -3,28 +3,24 @@
 @import './mixins';
 @import '../src/terra-table';
 
-@function get-size($size, $base) {
-  @return $size*$base+px;
-}
-
 .terra-Table-width-tiny {
-  min-width: get-size(1, 30);
+  min-width: 40px;
 }
 
 .terra-Table-width-small {
-  min-width: get-size(2, 30);
+  min-width: 60px;
 }
 
 .terra-Table-width-medium {
-  min-width: get-size(3, 30);
+  min-width: 80px;
 }
 
 .terra-Table-width-large {
-  min-width: get-size(4, 30);
+  min-width: 120px;
 }
 
 .terra-Table-width-huge {
-  min-width: get-size(5, 30);
+  min-width: 150px;
 }
 
 .terra-Table-content {
@@ -34,27 +30,27 @@
 
 .terra-Table-height-tiny,
 .terra-Table-headerHeight-tiny {
-  max-height: get-size(2, 10);
+  max-height: 26px;
 }
 
 .terra-Table-height-small,
 .terra-Table-headerHeight-small {
-  max-height: get-size(3, 10);
+  max-height: 46px;
 }
 
 .terra-Table-height-medium,
 .terra-Table-headerHeight-medium {
-  max-height: get-size(4, 10);
+  max-height: 66px;
 }
 
 .terra-Table-height-large,
 .terra-Table-headerHeight-large {
-  max-height: get-size(5, 10);
+  max-height: 86px;
 }
 
 .terra-Table-height-huge,
 .terra-Table-headerHeight-huge {
-  max-height: get-size(6, 10);
+  max-height: 106px;
 }
 
 .terra-Table--isSelected {

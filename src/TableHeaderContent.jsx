@@ -41,7 +41,7 @@ const TableHeaderContent = ({
   ]);
 
   return (
-    <th scope="col" onClick={onClick} className={contentClassName} {...customProps}>
+    <th onClick={onClick} className={contentClassName} {...customProps}>
       <div className={headerContentClassNames}>
         {display}
         <span className={ascSortInd}>↑</span>

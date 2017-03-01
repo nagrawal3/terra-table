@@ -29,13 +29,13 @@ storiesOf('Table ', module)
         <Table.HeaderContent display={'Column Heading 2'} key={2} minWidth={'medium'} />
         <Table.HeaderContent display={'Column Heading 3 Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text'} key={3} minWidth={'large'} />
       </Table.Header>
-      <Table.SingleSelectableRows isSelectable>
-        <Table.Row isSelected key={0}>
+      <Table.SingleSelectableRows>
+        <Table.Row isSelected isSelectable={false} key={0}>
           <Table.RowContent display={'Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text'} key={1} />
           <Table.RowContent display={'Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text'} key={2} />
           <Table.RowContent display={'Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text'} key={3} />
         </Table.Row>
-        <Table.Row isSelected={false} key={1}>
+        <Table.Row isSelected key={1}>
           <Table.RowContent display={'Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text'} key={1} />
           <Table.RowContent display={'Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text'} key={2} />
           <Table.RowContent display={'Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text'} key={3} />
@@ -55,7 +55,7 @@ storiesOf('Table ', module)
         <Table.HeaderContent display={'Column Heading 2 astringofreallylongtexttotestalongsinglewordtestcase'} key={2} minWidth={'medium'} />
         <Table.HeaderContent display={'Column Heading 3 astringofreallylongtexttotestalongsinglewordtestcase'} key={3} minWidth={'large'} />
       </Table.Header>
-      <Table.SingleSelectableRows height={'small'} isSelectable>
+      <Table.SingleSelectableRows height={'small'}>
         <Table.Row isSelected key={0}>
           <Table.RowContent display={'astringofreallylongtexttotestalongsinglewordtestcase'} key={1} />
           <Table.RowContent display={'astringofreallylongtexttotestalongsinglewordtestcase'} key={2} />
@@ -133,7 +133,7 @@ storiesOf('Table ', module)
         <Table.HeaderContent display={'Column Heading 2'} key={2} minWidth={'medium'} />
         <Table.HeaderContent display={'Column Heading 3 Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text'} key={3} minWidth={'large'} />
       </Table.Header>
-      <Table.SingleSelectableRows height={'large'} isSelectable>
+      <Table.SingleSelectableRows height={'large'}>
         <Table.Row isSelected key={0}>
           <Table.RowContent display={'Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text'} key={1} />
           <Table.RowContent display={'Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text'} key={2} />
@@ -159,7 +159,7 @@ storiesOf('Table ', module)
         <Table.HeaderContent display={'Column Heading 2'} key={2} minWidth={'medium'} />
         <Table.HeaderContent display={'Column Heading 3'} key={3} minWidth={'large'} />
       </Table.Header>
-      <Table.SingleSelectableRows height={'medium'} isSelectable>
+      <Table.SingleSelectableRows height={'medium'}>
         <Table.Row isSelected key={0}>
           <Table.RowContent display={'Column Text 1'} key={1} />
           <Table.RowContent display={'Column Text 2'} key={2} />
@@ -171,6 +171,42 @@ storiesOf('Table ', module)
           <Table.RowContent display={'Column Text 3'} key={3} />
         </Table.Row>
         <Table.Row key={2}>
+          <Table.RowContent display={'Column Text 1'} key={1} />
+          <Table.RowContent display={'Column Text 2'} key={2} />
+          <Table.RowContent display={'Column Text 3'} key={3} />
+        </Table.Row>
+      </Table.SingleSelectableRows>
+    </Table>
+  ))
+  .add('An example of the non-selectable rows in singleselectable table', () => (
+    <Table>
+      <Table.Header>
+        <Table.HeaderContent height={'medium'} key={1} display={'Column 1'} minWidth={'huge'} />
+        <Table.HeaderContent display={'Column Heading 2'} key={2} minWidth={'medium'} />
+        <Table.HeaderContent display={'Column Heading 3'} key={3} minWidth={'large'} />
+      </Table.Header>
+      <Table.SingleSelectableRows height={'medium'}>
+        <Table.Row isSelected isSelectable={false} key={0}>
+          <Table.RowContent display={'Column Text 1'} key={1} />
+          <Table.RowContent display={'Column Text 2'} key={2} />
+          <Table.RowContent display={'Column Text 3'} key={3} />
+        </Table.Row>
+        <Table.Row isSelected key={1}>
+          <Table.RowContent display={'Column Text 1'} key={1} />
+          <Table.RowContent display={'Column Text 2'} key={2} />
+          <Table.RowContent display={'Column Text 3'} key={3} />
+        </Table.Row>
+        <Table.Row key={2}>
+          <Table.RowContent display={'Column Text 1'} key={1} />
+          <Table.RowContent display={'Column Text 2'} key={2} />
+          <Table.RowContent display={'Column Text 3'} key={3} />
+        </Table.Row>
+        <Table.Row key={3}>
+          <Table.RowContent display={'Column Text 1'} key={1} />
+          <Table.RowContent display={'Column Text 2'} key={2} />
+          <Table.RowContent display={'Column Text 3'} key={3} />
+        </Table.Row>
+        <Table.Row key={4}>
           <Table.RowContent display={'Column Text 1'} key={1} />
           <Table.RowContent display={'Column Text 2'} key={2} />
           <Table.RowContent display={'Column Text 3'} key={3} />

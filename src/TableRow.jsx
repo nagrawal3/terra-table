@@ -7,10 +7,14 @@ const propTypes = {
   isSelected: PropTypes.bool,
   height: PropTypes.oneOf(['tiny', 'small', 'medium', 'large', 'huge']),
   onClick: PropTypes.func,
+  isSelectable: PropTypes.bool,
+  className: PropTypes.string,
 };
 
 const defaultProps = {
   isSelected: false,
+  isSelectable: undefined,
+  className: '',
 };
 
 function cloneChildItems(children, height) {
@@ -27,14 +31,18 @@ function cloneChildItems(children, height) {
 }
 
 const TableRow = ({
+  className,
   children,
   isSelected,
+  isSelectable,
   height,
   onClick,
   ...customProps
   }) => {
   const rowClassNames = classNames([
-      { 'terra-Table--isSelected': isSelected },
+    { 'terra-Table--isSelected': isSelected },
+    { 'terra-Table--isSelectable': isSelectable },
+    className,
   ]);
 
   const cloneChildren = cloneChildItems(children, height);
