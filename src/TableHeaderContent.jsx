@@ -18,7 +18,6 @@ const TableHeaderContent = ({
   height,
   minWidth,
   sort,
-  onClick,
   ...customProps
   }) => {
   const headerContentClassNames = classNames([
@@ -41,7 +40,7 @@ const TableHeaderContent = ({
   ]);
 
   return (
-    <th onClick={onClick} className={contentClassName} {...customProps}>
+    <th className={contentClassName} {...customProps}>
       <div className={headerContentClassNames}>
         {display}
         <span className={ascSortInd}>↑</span>

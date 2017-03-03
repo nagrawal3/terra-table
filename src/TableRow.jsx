@@ -17,14 +17,14 @@ const defaultProps = {
   className: '',
 };
 
-function cloneChildItems(children, height) {
+function cloneChildItems(children, height, onClick) {
   const childrenArray = React.Children.toArray(children);
   if (childrenArray.length > 16) {
     console.log(`Number of Columns are ${React.Children.count(children)}. This is more than columns limit`);
   }
   return childrenArray.filter((child, index) => index < 16).map((child) => {
     if (child.type === TableRowContent) {
-      return React.cloneElement(child, { height });
+      return React.cloneElement(child, { height, onClick });
     }
     return child;
   });
@@ -45,9 +45,9 @@ const TableRow = ({
     className,
   ]);
 
-  const cloneChildren = cloneChildItems(children, height);
+  const cloneChildren = cloneChildItems(children, height, onClick);
   return (
-    <tr className={rowClassNames} onClick={onClick} {...customProps}>
+    <tr className={rowClassNames} {...customProps}>
       {cloneChildren}
     </tr>
   );
