@@ -1,7 +1,7 @@
 @import 'node_modules/terra-mixins/src/terra-mixins';
 @import './variables';
 @import './mixins';
-@import '../src/terra-table';
+@import './terra-table';
 
 .terra-Table-width-tiny {
   min-width: 40px;
