@@ -59,7 +59,7 @@ class SingleSelectableRows extends React.Component {
 
     const isSelectable = row.props.isSelectable;
     // By default isSelectable attribute for the TableRow is undefined, as this is selectable table,
-    // we will make row selectable by default. If consumer specify the row attribute isSelectable as false, 
+    // we will make row selectable by default. If consumer specify the row attribute isSelectable as false,
     // then row will not be selectable
     if (isSelectable === undefined) {
       newProps.isSelectable = true;
