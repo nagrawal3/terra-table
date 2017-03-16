@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import TableHeader from './TableHeader';
 import TableHeaderContent from './TableHeaderContent';
 import TableRows from './TableRows';
-import TableRow from '.TableRow';
+import TableRow from './TableRow';
 import TableRowContent from './TableRowContent';
 import TableSingleSelectableRows from './SingleSelectableRows';
 import './table.scss';
