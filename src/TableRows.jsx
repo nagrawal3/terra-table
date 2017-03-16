@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import TableRow from '../src/TableRow';
+import TableRow from './TableRow';
 
 const propTypes = {
   children: PropTypes.node,

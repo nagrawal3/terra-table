@@ -1,12 +1,12 @@
 import React, { PropTypes } from 'react';
 import classNames from 'classnames';
-import TableHeader from '../src/TableHeader';
-import TableHeaderContent from '../src/TableHeaderContent';
-import TableRows from '../src/TableRows';
-import TableRow from '../src/TableRow';
-import TableRowContent from '../src/TableRowContent';
-import TableSingleSelectableRows from '../src/SingleSelectableRows';
-import '../src/table.scss';
+import TableHeader from './TableHeader';
+import TableHeaderContent from './TableHeaderContent';
+import TableRows from './TableRows';
+import TableRow from '.TableRow';
+import TableRowContent from './TableRowContent';
+import TableSingleSelectableRows from './SingleSelectableRows';
+import './table.scss';
 
 const propTypes = {
   children: PropTypes.node.isRequired,

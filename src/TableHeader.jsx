@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import TableHeaderContent from '../src/TableHeaderContent';
+import TableHeaderContent from './TableHeaderContent';
 
 const propTypes = {
   onClick: PropTypes.func,

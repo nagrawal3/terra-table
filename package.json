@@ -74,7 +74,7 @@
     "terra-mixins": "^1.0.0"
   },
   "scripts": {
-    "build": "babel src --out-dir lib",
+    "build": "babel src --out-dir lib --copy-files",
     "deploy": "build-storybook && gh-pages -d storybook-static",
     "lint": "yarn lint-js && yarn lint-scss",
     "lint-js": "eslint --ext .js,.jsx .",

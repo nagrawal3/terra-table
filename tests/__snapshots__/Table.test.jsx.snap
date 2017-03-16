@@ -1,0 +1,1036 @@
+exports[`Storyshots Table  An example of the base table with long string 1`] = `
+<span>
+  <table
+    className="terra-Table terra-Table--striped">
+    <thead>
+      <tr>
+        <th
+          className="terra-Table-width-huge"
+          onClick={undefined}>
+          <div
+            className="terra-Table-content">
+            Column Heading 1 astringofreallylongtexttotestalongsinglewordtestcase
+            <span
+              className="terra-Table-hidden">
+              ↑
+            </span>
+            <span
+              className="terra-Table-hidden">
+              ↓
+            </span>
+          </div>
+        </th>
+        <th
+          className="terra-Table-width-medium"
+          onClick={undefined}>
+          <div
+            className="terra-Table-content">
+            Column Heading 2 astringofreallylongtexttotestalongsinglewordtestcase
+            <span
+              className="terra-Table-hidden">
+              ↑
+            </span>
+            <span
+              className="terra-Table-hidden">
+              ↓
+            </span>
+          </div>
+        </th>
+        <th
+          className="terra-Table-width-large"
+          onClick={undefined}>
+          <div
+            className="terra-Table-content">
+            Column Heading 3 astringofreallylongtexttotestalongsinglewordtestcase
+            <span
+              className="terra-Table-hidden">
+              ↑
+            </span>
+            <span
+              className="terra-Table-hidden">
+              ↓
+            </span>
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="terra-Table--isSelected">
+        <td
+          onClick={undefined}>
+          <div
+            className="terra-Table-height-small terra-Table-content">
+            astringofreallylongtexttotestalongsinglewordtestcase
+          </div>
+        </td>
+        <td
+          onClick={undefined}>
+          <div
+            className="terra-Table-height-small terra-Table-content">
+            astringofreallylongtexttotestalongsinglewordtestcase
+          </div>
+        </td>
+        <td
+          onClick={undefined}>
+          <div
+            className="terra-Table-height-small terra-Table-content">
+            astringofreallylongtexttotestalongsinglewordtestcase
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="">
+        <td
+          onClick={undefined}>
+          <div
+            className="terra-Table-height-small terra-Table-content">
+            astringofreallylongtexttotestalongsinglewordtestcase
+          </div>
+        </td>
+        <td
+          onClick={undefined}>
+          <div
+            className="terra-Table-height-small terra-Table-content">
+            astringofreallylongtexttotestalongsinglewordtestcase
+          </div>
+        </td>
+        <td
+          onClick={undefined}>
+          <div
+            className="terra-Table-height-small terra-Table-content">
+            astringofreallylongtexttotestalongsinglewordtestcase
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="">
+        <td
+          onClick={undefined}>
+          <div
+            className="terra-Table-height-small terra-Table-content">
+            astringofreallylongtexttotestalongsinglewordtestcase
+          </div>
+        </td>
+        <td
+          onClick={undefined}>
+          <div
+            className="terra-Table-height-small terra-Table-content">
+            astringofreallylongtexttotestalongsinglewordtestcase
+          </div>
+        </td>
+        <td
+          onClick={undefined}>
+          <div
+            className="terra-Table-height-small terra-Table-content">
+            astringofreallylongtexttotestalongsinglewordtestcase
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</span>
+`;
+
+exports[`Storyshots Table  An example of the base table with long text. Rows will have vertical scroll bar 1`] = `
+<span>
+  <table
+    className="terra-Table terra-Table--striped">
+    <thead>
+      <tr>
+        <th
+          className="terra-Table-width-huge"
+          onClick={undefined}>
+          <div
+            className="terra-Table-content">
+            Column Heading 1 Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+            <span
+              className="terra-Table-hidden">
+              ↑
+            </span>
+            <span
+              className="terra-Table-hidden">
+              ↓
+            </span>
+          </div>
+        </th>
+        <th
+          className="terra-Table-width-medium"
+          onClick={undefined}>
+          <div
+            className="terra-Table-content">
+            Column Heading 2
+            <span
+              className="terra-Table-hidden">
+              ↑
+            </span>
+            <span
+              className="terra-Table-hidden">
+              ↓
+            </span>
+          </div>
+        </th>
+        <th
+          className="terra-Table-width-large"
+          onClick={undefined}>
+          <div
+            className="terra-Table-content">
+            Column Heading 3 Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+            <span
+              className="terra-Table-hidden">
+              ↑
+            </span>
+            <span
+              className="terra-Table-hidden">
+              ↓
+            </span>
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="terra-Table--isSelected">
+        <td
+          onClick={undefined}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+        <td
+          onClick={undefined}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+        <td
+          onClick={undefined}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="">
+        <td
+          onClick={undefined}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+        <td
+          onClick={undefined}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+        <td
+          onClick={undefined}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="">
+        <td
+          onClick={undefined}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+        <td
+          onClick={undefined}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+        <td
+          onClick={undefined}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</span>
+`;
+
+exports[`Storyshots Table  An example of the non-selectable rows in singleselectable table 1`] = `
+<span>
+  <table
+    className="terra-Table terra-Table--striped">
+    <thead>
+      <tr>
+        <th
+          className="terra-Table-width-huge"
+          onClick={undefined}>
+          <div
+            className="terra-Table-content">
+            Column 1
+            <span
+              className="terra-Table-hidden">
+              ↑
+            </span>
+            <span
+              className="terra-Table-hidden">
+              ↓
+            </span>
+          </div>
+        </th>
+        <th
+          className="terra-Table-width-medium"
+          onClick={undefined}>
+          <div
+            className="terra-Table-content">
+            Column Heading 2
+            <span
+              className="terra-Table-hidden">
+              ↑
+            </span>
+            <span
+              className="terra-Table-hidden">
+              ↓
+            </span>
+          </div>
+        </th>
+        <th
+          className="terra-Table-width-large"
+          onClick={undefined}>
+          <div
+            className="terra-Table-content">
+            Column Heading 3
+            <span
+              className="terra-Table-hidden">
+              ↑
+            </span>
+            <span
+              className="terra-Table-hidden">
+              ↓
+            </span>
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="">
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 1
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 2
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 3
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="terra-Table--isSelected terra-Table--isSelectable">
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 1
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 2
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 3
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="terra-Table--isSelectable">
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 1
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 2
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 3
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="terra-Table--isSelectable">
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 1
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 2
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 3
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="terra-Table--isSelectable">
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 1
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 2
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 3
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</span>
+`;
+
+exports[`Storyshots Table  An example of the selectable base table with long string 1`] = `
+<span>
+  <table
+    className="terra-Table terra-Table--striped">
+    <thead>
+      <tr>
+        <th
+          className="terra-Table-width-huge"
+          onClick={undefined}>
+          <div
+            className="terra-Table-content">
+            Column Heading 1 astringofreallylongtexttotestalongsinglewordtestcase
+            <span
+              className="terra-Table-hidden">
+              ↑
+            </span>
+            <span
+              className="terra-Table-hidden">
+              ↓
+            </span>
+          </div>
+        </th>
+        <th
+          className="terra-Table-width-medium"
+          onClick={undefined}>
+          <div
+            className="terra-Table-content">
+            Column Heading 2 astringofreallylongtexttotestalongsinglewordtestcase
+            <span
+              className="terra-Table-hidden">
+              ↑
+            </span>
+            <span
+              className="terra-Table-hidden">
+              ↓
+            </span>
+          </div>
+        </th>
+        <th
+          className="terra-Table-width-large"
+          onClick={undefined}>
+          <div
+            className="terra-Table-content">
+            Column Heading 3 astringofreallylongtexttotestalongsinglewordtestcase
+            <span
+              className="terra-Table-hidden">
+              ↑
+            </span>
+            <span
+              className="terra-Table-hidden">
+              ↓
+            </span>
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="terra-Table--isSelected terra-Table--isSelectable">
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-small terra-Table-content">
+            astringofreallylongtexttotestalongsinglewordtestcase
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-small terra-Table-content">
+            astringofreallylongtexttotestalongsinglewordtestcase
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-small terra-Table-content">
+            astringofreallylongtexttotestalongsinglewordtestcase
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="terra-Table--isSelectable">
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-small terra-Table-content">
+            astringofreallylongtexttotestalongsinglewordtestcase
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-small terra-Table-content">
+            astringofreallylongtexttotestalongsinglewordtestcase
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-small terra-Table-content">
+            astringofreallylongtexttotestalongsinglewordtestcase
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="terra-Table--isSelectable">
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-small terra-Table-content">
+            astringofreallylongtexttotestalongsinglewordtestcase
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-small terra-Table-content">
+            astringofreallylongtexttotestalongsinglewordtestcase
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-small terra-Table-content">
+            astringofreallylongtexttotestalongsinglewordtestcase
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</span>
+`;
+
+exports[`Storyshots Table  An example of the selectable base table with long text 1`] = `
+<span>
+  <table
+    className="terra-Table terra-Table--striped">
+    <thead>
+      <tr>
+        <th
+          className="terra-Table-width-huge"
+          onClick={undefined}>
+          <div
+            className="terra-Table-content">
+            Column Heading 1 Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+            <span
+              className="terra-Table-hidden">
+              ↑
+            </span>
+            <span
+              className="terra-Table-hidden">
+              ↓
+            </span>
+          </div>
+        </th>
+        <th
+          className="terra-Table-width-medium"
+          onClick={undefined}>
+          <div
+            className="terra-Table-content">
+            Column Heading 2
+            <span
+              className="terra-Table-hidden">
+              ↑
+            </span>
+            <span
+              className="terra-Table-hidden">
+              ↓
+            </span>
+          </div>
+        </th>
+        <th
+          className="terra-Table-width-large"
+          onClick={undefined}>
+          <div
+            className="terra-Table-content">
+            Column Heading 3 Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+            <span
+              className="terra-Table-hidden">
+              ↑
+            </span>
+            <span
+              className="terra-Table-hidden">
+              ↓
+            </span>
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="">
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="terra-Table--isSelected terra-Table--isSelectable">
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="terra-Table--isSelectable">
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</span>
+`;
+
+exports[`Storyshots Table  An example of the selectable base table with long text. Row and header height is fixed. Add vertical scroll 1`] = `
+<span>
+  <table
+    className="terra-Table terra-Table--striped">
+    <thead
+      isSelectable={true}>
+      <tr>
+        <th
+          className="terra-Table-width-huge"
+          onClick={undefined}>
+          <div
+            className="terra-Table-headerHeight-medium terra-Table-content">
+            Column Heading 1 Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+            <span
+              className="terra-Table-hidden">
+              ↑
+            </span>
+            <span
+              className="terra-Table-hidden">
+              ↓
+            </span>
+          </div>
+        </th>
+        <th
+          className="terra-Table-width-medium"
+          onClick={undefined}>
+          <div
+            className="terra-Table-headerHeight-medium terra-Table-content">
+            Column Heading 2
+            <span
+              className="terra-Table-hidden">
+              ↑
+            </span>
+            <span
+              className="terra-Table-hidden">
+              ↓
+            </span>
+          </div>
+        </th>
+        <th
+          className="terra-Table-width-large"
+          onClick={undefined}>
+          <div
+            className="terra-Table-headerHeight-medium terra-Table-content">
+            Column Heading 3 Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+            <span
+              className="terra-Table-hidden">
+              ↑
+            </span>
+            <span
+              className="terra-Table-hidden">
+              ↓
+            </span>
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="terra-Table--isSelected terra-Table--isSelectable">
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-large terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-large terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-large terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="terra-Table--isSelectable">
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-large terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-large terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-large terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="terra-Table--isSelectable">
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-large terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-large terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-large terra-Table-content">
+            Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</span>
+`;
+
+exports[`Storyshots Table  An example of the selectable base table without zebra stipping 1`] = `
+<span>
+  <table
+    className="terra-Table">
+    <thead>
+      <tr>
+        <th
+          className="terra-Table-width-huge"
+          onClick={undefined}>
+          <div
+            className="terra-Table-content">
+            Column 1
+            <span
+              className="terra-Table-hidden">
+              ↑
+            </span>
+            <span
+              className="terra-Table-hidden">
+              ↓
+            </span>
+          </div>
+        </th>
+        <th
+          className="terra-Table-width-medium"
+          onClick={undefined}>
+          <div
+            className="terra-Table-content">
+            Column Heading 2
+            <span
+              className="terra-Table-hidden">
+              ↑
+            </span>
+            <span
+              className="terra-Table-hidden">
+              ↓
+            </span>
+          </div>
+        </th>
+        <th
+          className="terra-Table-width-large"
+          onClick={undefined}>
+          <div
+            className="terra-Table-content">
+            Column Heading 3
+            <span
+              className="terra-Table-hidden">
+              ↑
+            </span>
+            <span
+              className="terra-Table-hidden">
+              ↓
+            </span>
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr
+        className="terra-Table--isSelected terra-Table--isSelectable">
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 1
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 2
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 3
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="terra-Table--isSelectable">
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 1
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 2
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 3
+          </div>
+        </td>
+      </tr>
+      <tr
+        className="terra-Table--isSelectable">
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 1
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 2
+          </div>
+        </td>
+        <td
+          onClick={[Function]}>
+          <div
+            className="terra-Table-height-medium terra-Table-content">
+            Column Text 3
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</span>
+`;
+
+exports[`test should render a default component 1`] = `
+<table
+  className="terra-Table terra-Table--striped">
+  <TableHeader>
+    <TableHeaderContent
+      display="Column Heading 1 Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text"
+      minWidth="huge" />
+    <TableHeaderContent
+      display="Column Heading 2"
+      minWidth="medium" />
+    <TableHeaderContent
+      display="Column Heading 3 Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text"
+      minWidth="large" />
+  </TableHeader>
+  <SingleSelectableRows>
+    <TableRow
+      className=""
+      isSelectable={false}
+      isSelected={true}>
+      <TableRowContent
+        display="Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text" />
+      <TableRowContent
+        display="Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text" />
+      <TableRowContent
+        display="Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text" />
+    </TableRow>
+    <TableRow
+      className=""
+      isSelected={true}>
+      <TableRowContent
+        display="Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text" />
+      <TableRowContent
+        display="Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text" />
+      <TableRowContent
+        display="Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text" />
+    </TableRow>
+    <TableRow
+      className=""
+      isSelected={false}>
+      <TableRowContent
+        display="Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text" />
+      <TableRowContent
+        display="Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text" />
+      <TableRowContent
+        display="Vey long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text Very long button text" />
+    </TableRow>
+  </SingleSelectableRows>
+</table>
+`;
